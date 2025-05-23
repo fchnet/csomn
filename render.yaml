@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: chatbot-agendamento
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: GOOGLE_CALENDAR_ID
+        sync: false
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASSWORD
+        sync: false
+      - key: EMAIL_HOST
+        sync: false
+      - key: EMAIL_PORT
+        sync: false
+      - key: IMAGE_PATH
+        sync: false
+      - key: START_HOUR
+        sync: false
+      - key: END_HOUR
+        sync: false
+      - key: APPOINTMENT_DURATION_MINUTES
+        sync: false
+      - key: MAX_CONCURRENT_APPOINTMENTS
+        sync: false
+      - key: MAX_APPOINTMENTS_PER_DAY
+        sync: false
