@@ -1,3 +1,3 @@
 # Procfile
 
-web: python main.py
+web: python chatbot_corrigido.py
