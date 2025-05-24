@@ -1,0 +1,21 @@
+# .gitignore para proteger dados sensíveis e arquivos que não precisam ir ao GitHub
+
+# Arquivos de ambiente
+.env
+
+# Credenciais sensíveis
+chatbot_agendamento/json/service_account.json
+
+# Arquivos temporários e cache
+*.pyc
+__pycache__/
+*.sqlite3
+*.log
+
+# Pastas de virtualenv
+venv/
+.env/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
